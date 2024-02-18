@@ -59,11 +59,8 @@ dependencies {
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    androidTestImplementation(platform("androidx.compose:compose-bom:2023.08.00"))
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
+    implementation("junit:junit:4.12")
+
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     val lifecycle_version = "2.7.0"
@@ -78,7 +75,6 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-service:$lifecycle_version")
     implementation("androidx.lifecycle:lifecycle-process:$lifecycle_version")
     implementation("androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycle_version")
-    testImplementation("androidx.arch.core:core-testing:$arch_version")
-    testImplementation ("androidx.lifecycle:lifecycle-runtime-testing:$lifecycle_version")
     testImplementation("junit:junit:4.13.2")
+
 }
